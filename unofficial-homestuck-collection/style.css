@@ -101,6 +101,13 @@ img {
   background-color: #37bc3a;
 }
 
+.anchorButton.twitter {
+  background-color: #1da1f2;
+}
+.anchorButton.twitter:hover {
+  background-color: #1889cf;
+}
+
 .log {
   width: 700px;
   margin: 0 auto;
