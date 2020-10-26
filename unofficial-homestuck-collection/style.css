@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+  flex: 1 0 auto;
+  align-items: center;
+
+  background: url(images/css_right.png) repeat-y, url(images/css_left.png) repeat-y;
+  background-position: left top, right top;
+  background-color: #35bfff;
+  background-attachment: fixed;
+
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+.card {
+  position: relative;
+  margin-bottom: 35px;
+  padding: 0 50px;
+  border: solid 5px #C6C6C6;
+  box-sizing: border-box;
+  max-width: 950px;
+  width: 90%;
+  background: #EEEEEE;
+
+  flex: 0 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  align-content: center;
+}
+.card:first-of-type {
+  margin-top: 50px;
+}
+.cardContent {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.splitCard {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  padding: 0;
+}
+.cardLeft, .cardRight {
+  padding: 15px;
+  width: 50%;
+  text-align: center;
+}
+.cardLeft h2, .cardRight h2 {
+  margin-top: 0;
+  text-align: center;
+}
+.divider {
+  border-left: solid 3px #C6C6C6;
+  width: 1px;
+}
+.downloadLinks {
+  text-align: center;
+  margin: 0 auto;
+}
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 32px;
+}
+h3 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  /* margin-top: 0; */
+}
+img {
+  max-width: 100%;
+}
+.standaloneImage {
+  max-width: 1000px;
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 0 0 20px -2px black;
+  margin-bottom: 25px;
+}
+.standaloneImage img {
+  display: block;
+  border-radius: 5px;
+}
+
+.logoBox {
+  width: 100%;
+  margin: 16px auto;
+}
+
+.anchorButton {
+  padding: 10px 50px;
+  border-radius: 3px;
+  background-color: #3edd41;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.anchorButton:hover {
+  background-color: #37bc3a;
+}
+
+.log {
+  width: 700px;
+  margin: 0 auto;
+  border: 1px dashed #808080;
+  padding: 1px;
+  text-align: center;
+  align-self: center;
+}
+.logButton {
+    text-transform: capitalize;
+}
+.logButton::before {
+  content: "Hide ";
+}
+.logHidden .logButton::before {
+  content: "Show ";
+}
+.log .logContent{
+  padding: 15px;
+  text-align: center;
+  line-height: 1.35;
+}
+.logContent ul {
+  margin: 0 auto;
+  text-align: left;
+}
+.logHidden .logContent {
+    display: none;
+}
