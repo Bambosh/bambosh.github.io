@@ -90,6 +90,7 @@ img {
 
 .anchorButton {
   padding: 10px 50px;
+  width: 225px;
   border-radius: 3px;
   background-color: #3edd41;
   display: inline-block;
@@ -106,6 +107,13 @@ img {
 }
 .anchorButton.twitter:hover {
   background-color: #1889cf;
+}
+
+.anchorButton.bugreport {
+  background-color: #ff3b22;
+}
+.anchorButton.bugreport:hover {
+  background-color: #e4331c;
 }
 
 .log {
