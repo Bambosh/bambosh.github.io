@@ -9,22 +9,32 @@
   <meta name="description" content="An offline browser built from the ground up to archive Homestuck and its related works. It's everything you could "> 
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="THE UNOFFICIAL HOMESTUCK COLLECTION" />
-  <meta property="og:description" content="An offline browser built from the ground up to archive Homestuck and its related works." />
+  <meta property="og:title" content="THE UNOFFICIAL HOMESTUCK COLLECTION - 2.0" />
+  <meta property="og:description" content="An offline browser built from the ground up to archive Homestuck and its related works. Now with mod support!" />
   <meta property="og:image" content="https://bambosh.github.io/unofficial-homestuck-collection/images/thumbnail.png" />
 
-  <script src="https://kit.fontawesome.com/b08012a568.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b08012a568.js" crossorigin="anonymous"></script>  
 </head>
 <body>
   <div class="card" id="introCard">
     <div class="logoBox">
-      <img src="images/collection_logo.png"/>
+      <a href="index.html">
+        <video autoplay loop muted >
+          <source src="images/collection_logo_v2.webm" type="video/webm">
+          <source src="images/collection_logo_v2.mp4" type="video/mp4">
+          <img src="images/collection_logo_v2.png"/>
+        </video>
+      </a>
     </div>
     <div class="cardContent">
-      <p><a href="https://twitter.com/Bamboshu" target="_blank" class="anchorButton twitter"><i class="fab fa-twitter"></i> Visit me on Twitter!</a></p>
-        <p><a href="#download" class="anchorButton"><i class="fas fa-download"></i> Skip to the download</a></p>
-      <p><a href="https://github.com/Bambosh/unofficial-homestuck-collection/issues/new?labels=bug" target="_blank" class="anchorButton bugreport"><i class="fas fa-bug"></i> Report a bug</a></p>
-      <p><strong>LATEST VERSION:<br>V1.1.0 - 3/NOV/2020</strong></p>
+      <div id="buttons">
+        <span><a href="#download" class="anchorButton"><i class="fas fa-download"></i> Download</a></span>
+        <span><a href="faq.html" class="anchorButton faq"><i class="fas fa-question"></i> FAQs</a></span>
+        <span><a href="https://twitter.com/Bamboshu" target="_blank" class="anchorButton twitter"><i class="fab fa-twitter"></i> Visit me on Twitter!</a></span>
+        <span><a href="https://github.com/Bambosh/unofficial-homestuck-collection/issues/new?labels=bug" target="_blank" class="anchorButton bugreport"><i class="fas fa-bug"></i> Report a bug</a></span>
+      </div>
+
+      <p><strong>LATEST VERSION:<br>V2.0.4 - 14/FEB/2022</strong></p>
       
       <p>Let me tell you a story about a webcomic called <em>Homestuck</em>. The fourth in a series of “MS Paint Adventures” authored by Andrew Hussie from 2006 to 2016, it became wildly successful, in part because of its eclectic use of web technology like Adobe Flash and GIF animations.</p>
 
@@ -33,7 +43,7 @@
   </div>
   
   <div class="standaloneImage"> 
-    <img src="images/collection1.gif"/>
+    <img src="images/collection.gif"/>
   </div>
 
   <div class="card">
@@ -44,7 +54,7 @@
       <p>Don't get it twisted though, because "browser" in this context doesn't mean "online". <em>The Unofficial Homestuck Collection</em> is completely self contained, and <em>never</em> has to connect to the internet once you have it downloaded. </p>
 
       <h2>A ONE-STOP SHOP</h2>
-      <p>Don't think we'd be content stopping at just <em>Homestuck</em>. The collection contains the other MS Paint Adventures, official <em>Homestuck</em> side-stories, and a garguantuan array of goodies for the enquiring reader. <a href="#faq2">Seriously, there is SO MUCH CONTENT in this thing.</a> It's totally ridiculous.</p> 
+      <p>Don't think we'd be content stopping at just <em>Homestuck</em>. The collection contains the other MS Paint Adventures, official <em>Homestuck</em> side-stories, and a garguantuan array of goodies for the enquiring reader. <a href="faq.html">Seriously, there is SO MUCH CONTENT in this thing.</a> It's totally ridiculous.</p> 
 
       <h2>NEW READER? NO PROBLEM.</h2>
       <p>Always wanted to try Homestuck? Overwhelmed by all the side-stories and sequels, and frustrated by the late-arrival spoilers plastered all over the internet? We've got your back. From the very beginning, <em>The Unofficial Homestuck Collection</em> has been designed to work as a safe way for new readers to get their teeth into the <em>Homestuck</em> universe. If you so choose, all future content will be carefully gated off until your progress in <em>Homestuck</em> makes it safe to view.</p>
@@ -59,116 +69,54 @@
   <div class="card">
     <div class="cardContent">
       <h2>THIS IS WHAT THE REFRANCE</h2>
-      <p><em>The Unofficial Homestuck Collection</em> contains a complete database of the <em>Homestuck</em> Bandcamp, up to the most recent album as of <em>10/25/2020</em>. Want to know more about the crazy song you just heard in that Flash animation? Follow the link and see what's up! If you so choose, you can even enable an inline media player that legally streams the music directly from the source. You can try not to get lost exploring the twisted web of Homestuck's discography, but it's inevitable.</p>
+      <p><em>The Unofficial Homestuck Collection</em> contains a complete database of the <em>Homestuck</em> Bandcamp, up to the most recent album. Want to know more about the crazy song you just heard in that Flash animation? Follow the link and see what's up! If you so choose, you can even enable an inline media player that legally streams the music directly from the source. You can try not to get lost exploring the twisted web of Homestuck's discography, but it's inevitable.</p>
 
       <h2>ENHANCED IN WAYS YOU CAN'T EVEN IMAGINE</h2>
       <p>We've got complete control over the browser, so you'd better believe we're taking advantage of it. Mid 2000's quality bitcrushed Flash audio? Nah, man. Almost every single flash in Homestuck has been painstakingly reworked with the highest quality music available. <a href="./images/Untitled-60.jpg">You have to hear it to believe it.</a> Want to use themes on every page? Go nuts, I'm not the boss of you. Arrow key navigation? Automatically opening pesterlogs? You got it. Want absolutely none of the above? That's also an option! It's Homestuck, the way <em>you</em> want it.</p>
+    
+      
+      <h2>CREATE THE HOMESTUCK YOU WANT THE WORLD TO SEE</h2>
+      <p><em>The Unofficial Homestuck Collection</em> contains a drastic modding system. Make whatever changes you can imagine, <a href="https://github.com/Bambosh/unofficial-homestuck-collection/wiki/Third-Party-Mods" target="_blank">and share them with the community.</a> Do whatever you want, I don't care. Become ungovernable.</p>
     </div>
   </div>
 
   <div class="standaloneImage"> 
-    <img src="./images/themes.gif" />
+    <video autoplay controls loop muted>
+      <source src="images/mod_example.mp4" />
+      <img src="images/mod_example.png">
+    </video>
   </div>
 
   <div class="splitCard card" id="download">
     <div class="cardLeft">
       <h2>DOWNLOAD THE APP</h2>
-      <p>The application is a roughly <em>70 MB</em> download, and requires the <strong>Asset Pack V1</strong> to function. Future updates to the application may require an updated Asset Pack.</p>
-      <a class="anchorButton" href="https://github.com/Bambosh/unofficial-homestuck-collection/releases/download/V1.1.0/The.Unofficial.Homestuck.Collection-1.1.0-win.zip" target="_blank"><i class="fab fa-windows"></i> Windows - V1.1.0</a>
+      <p>The application is a roughly <em>80 MB</em> download, and requires the <strong>Asset Pack V2</strong> to function. Future updates to the application may require an updated Asset Pack.</p>
+      <a class="anchorButton" href="https://github.com/Bambosh/unofficial-homestuck-collection/releases/download/2.0.4/The.Unofficial.Homestuck.Collection-2.0.4-win.zip" target="_blank"><i class="fab fa-windows"></i> Windows - V2.0.4</a>
       <br><br>
-      <a class="anchorButton" href="https://github.com/Bambosh/unofficial-homestuck-collection/releases/download/V1.1.0/The.Unofficial.Homestuck.Collection-1.1.0.dmg" target="_blank"><i class="fab fa-apple"></i> MacOS - V1.1.0</a>
+      <a class="anchorButton" href="https://github.com/Bambosh/unofficial-homestuck-collection/releases/download/2.0.4/The.Unofficial.Homestuck.Collection-2.0.4.dmg" target="_blank"><i class="fab fa-apple"></i> MacOS - V2.0.4</a>
       <br><br>
-      <a class="anchorButton" href="https://github.com/Bambosh/unofficial-homestuck-collection/releases/download/V1.1.0/unofficial-homestuck-collection-1.1.0.tar.gz" target="_blank"><i class="fab fa-linux"></i> Linux - V1.1.0</a>
+      <a class="anchorButton" href="https://github.com/Bambosh/unofficial-homestuck-collection/releases/download/2.0.4/unofficial-homestuck-collection-2.0.4.tar.gz" target="_blank"><i class="fab fa-linux"></i> Linux (.tar.gz) - V2.0.4</a>
       <br><br>
-      <a href="https://github.com/Bambosh/unofficial-homestuck-collection/releases" target="_blank">Check out the changelog on GitHub!</a>
+      <a class="anchorButton" href="https://github.com/Bambosh/unofficial-homestuck-collection/releases/download/2.0.4/The.Unofficial.Homestuck.Collection-2.0.4.AppImage" target="_blank"><i class="fab fa-linux"></i> Linux (.AppImage) - V2.0.4</a>
+      <br><br>
+      <a href="https://github.com/Bambosh/unofficial-homestuck-collection/releases" target="_blank">Full release history on GitHub</a>
+      <br><br>
+      <a href="old_versions.html" target="_blank">1.1.0 Archive</a>
       <br><br>
     </div>
     <span class="divider" ></span>
     <div class="cardRight">
       <h2>DOWNLOAD THE ASSETS</h2>
-      <p>The <strong>Asset Pack V1</strong> is a <em>3.68 GB</em> download, and it's necessary in order to run the application. It contains all the text, images, animations, and everything else!</p>
-      <p>Download it from one of the following links:</p>
+      <p>The <strong>Asset Pack V2</strong> is a <em>4.3 GB</em> download, and it's necessary in order to run the application. It contains all the text, images, animations, and everything else!</p>
+      <p>Once you download it from one of the following links, you'll need to extract it to somewhere on your PC. <a href="howto.html">Click here for a guide on how to do this.</a></p>
       <div class="downloadLinks">
-        <a class="anchorButton" href="http://www.mediafire.com/file/1yeyg0kfyipi0nr/Asset_Pack_V1_-_The__Unofficial_Homestuck_Collection.zip/file" target="_blank">Mediafire (Mirror 1)</a>
+        <a class="anchorButton" href="https://www.mediafire.com/file/ibuq7kts2ttkow1/Asset+Pack+V2+-+The+Unofficial+Homestuck+Collection.zip/file" target="_blank">Mediafire (Mirror 1)</a>
         <br><br>
-        <a class="anchorButton" href="https://drive.google.com/file/d/1XNSdZ55FHVjL7vZq8gWpfvoOf7jX6P4C/view?usp=sharing" target="_blank">Google Drive (Mirror 2)</a>
+        <a class="anchorButton disabled">More mirrors soon</a><br>
         <br><br>
-        <a class="anchorButton" href="https://mega.nz/file/ntkUXAAB#lL-S_XEFSTlBQZQsucQ4nXCMZL_Ps9pvS7d0e9zNXsU" target="_blank">MEGA (Mirror 3)</a>
-        <br><br>
-        <a class="anchorButton" href="Asset_Pack_V1_-_The_Unofficial_Homestuck_Collection.zip.torrent" target="_blank">TORRENT</a><br>
-        <a href="magnet:?xt=urn:btih:1208156363ef2934aedfcde197f5492fb5c12fa0&dn=Asset%20Pack%20V1%20-%20The%20Unofficial%20Homestuck%20Collection.zip&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce">(Magnet Link)</a>
+        <a href="upgrade.html">How to upgrade from V1</a>
       </div>
     </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="card">
-  <div class="cardContent">
-   <h2>FAQ</h2>
-
-      <h3>So you just... download it? That's it?</h3>
-      <p>That's right! Well, almost. You probably saw above, but <em>The Unofficial Homestuck Collection</em> is actually split into two downloads: the desktop application itself, and the Asset Pack. In order to get it running, you need to pair the application with the asset pack the first time you start it up. The first thing you see will be <a href="./images/setup.png">a screen like this, with a "Locate Assets" button down the bottom.</a> Once you have the Asset Pack downloaded, extract it anywhere you want. Even an external hard drive will work! Then hit the "Locate Assets" button, and select the extracted folder. The program will automatically restart, and bring you into the main browser!</p>
-
-      <p>With all that said, <a href="https://github.com/Bambosh/unofficial-homestuck-collection" target="_blank">the application is completely open source, and you can play around the repository as much as you want over here.</a> It's all GPL-3.0, so fork it, request features, do whatever!</p>
-      <br>
-
-      <h3 id="faq2">Okay, so what's actually in it?</h3>
-      <p>That's an extremely good question. The issue with this is that it's so damn large I can't even remember everything inside off the top of my head. Here's a by-no-means exhaustive list:</p>
-      <div class="log logHidden" id="collectionContents">
-        <button class="logButton" onclick="document.getElementById('collectionContents').classList.toggle('logHidden')">archive contents</button>
-        <div class="logContent">
-          <ul>
-            <li>Homestuck</li>
-            <li>Homestuck Music Database</li>
-            <li>Homestuck Beta</li>
-            <li>Sweet Bro & Hella Jeff</li>
-            <li>The Blog of Dave Strider</li>
-            <li>Namco High</li>
-            <li>Paradox Space</li>
-            <li>Snapchats</li>
-            <li>Skaianet Systems</li>
-            <li>Jailbreak</li>
-            <li>Bard Quest</li>
-            <li>Problem Sleuth</li>
-            <li>Problem Sleuth Science FAQ</li>
-            <li>Donation Commands</li>
-            <li>The Baby Is You</li>
-            <li>The Vigil Prince</li>
-            <li>Whistles: The Starlight Calliope</li>
-            <li>And It Don't Stop</li>
-            <li>Neon Ice Cream Headache</li>
-            <li>Steep Price For Pie</li>
-            <li>Inappropriate Time For Ham</li>
-            <li>Riddler's Gammon</li>
-            <li>Humanimals</li>
-            <li>Zoosmells</li>
-            <li>An Offer You Can't Refuse</li>
-            <li>A Magical Journey Through the Internet</li>
-            <li>Cheerfulbear - PLAY ME</li>
-            <li>The Man-On-Man Suckoff Challenge</li>
-            <li>MSPA Newspost archive</li>
-            <li>Blogspot, Formspring, and Tumblr</li>
-            <li>Desktop Wallpapers</li>
-            <li>Ryanquest</li>
-            <li>Morse code translator</li>
-            <li>Alternian cipher</li>
-          </ul>
-          <br>
-          And that's not even all of it? How big is this thing?
-        </div>
-      </div>
-      <br><br>
-
-      <h3>Wait, doesn't this have the Epilogues? Or Homestuck^2? What gives?</h3>
-      <p><a href="https://www.patreon.com/homestuck" target="_blank">You! Giving to the Homestuck team, that is.</a> The new age of Homestuck is going strong, and it needs your support to continue. I consider the Epilogues, HS^2, and the various games released over the past few years to be under active maintenance, and an ongoing source of income for the creators. Including those in the collection would feel scummy. The main reason it exists is to prevent the technological decay of Homestuck, not to "stick one to the man" or some garbage. Need to read the Epilogues offline? <a href="https://www.viz.com/read/graphic-novel/homestuck-epilogues/product/6154" target="_blank">They made a book for that! It's literally just text!</a> And speaking of books, go and check out <a href="https://www.viz.com/homestuck">Viz's line of deluxe Homestuck hardcovers.</a> They have tons of author commentary you won't find in the collection, because again, I'm <em>really</em> not about harming these guys financially.</p>
-      <br>
-      
-      <h3>So, what's your endgame then?</h3>
-      <p>Homestuck is suffering with the decline of Flash, and as long as it exists on the internet, these problems will be inherent to it. The ideal outcome for this collection is that it keeps Homestuck alive for people who may otherwise have given up on it, so they can continue to support all the official channels going forward. If this project results in even one new fan hopping on-board who otherwise wouldn't have, I would consider that a success.</p>
-      <br>
-      
     </div>
   </div>
 </div>

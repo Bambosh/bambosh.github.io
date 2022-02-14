@@ -6,9 +6,8 @@ body {
   flex: 1 0 auto;
   align-items: center;
 
-  background: url(images/css_right.png) repeat-y, url(images/css_left.png) repeat-y;
+  background: url(images/css_right.png) repeat-y, url(images/css_left.png) repeat-y, linear-gradient(180deg, #35bfff 50%,  #0c86e9 100%), #35bfff;
   background-position: left top, right top;
-  background-color: #35bfff;
   background-attachment: fixed;
 
   font-family: Verdana,Arial,Helvetica,sans-serif;
@@ -22,6 +21,8 @@ body {
   max-width: 950px;
   width: 90%;
   background: #EEEEEE;
+
+  border-radius: 5px;
 
   flex: 0 1 auto;
   display: flex;
@@ -66,21 +67,22 @@ h2 {
 h3 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 24px;
-  /* margin-top: 0; */
+  margin-top: 36px;
+  margin-bottom: 0;
 }
 img {
   max-width: 100%;
 }
 .standaloneImage {
-  max-width: 1000px;
-  width: 90%;
+  max-width: 90%;
   border-radius: 5px;
   box-shadow: 0 0 20px -2px black;
   margin-bottom: 25px;
 }
-.standaloneImage img {
+.standaloneImage img, .standaloneImage video {
   display: block;
   border-radius: 5px;
+  max-width: 100%;
 }
 
 .logoBox {
@@ -88,20 +90,37 @@ img {
   margin: 16px auto;
 }
 
+.logoBox img, .logoBox video {
+  max-width: 100%;
+}
+
+#buttons {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
 .anchorButton {
   padding: 10px 50px;
+  margin-bottom: 10px;
   width: 225px;
   border-radius: 3px;
-  background-color: #3edd41;
+  /* border: solid #00000040 5px; */
+  background-color: #3bc43d;
   display: inline-block;
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
 .anchorButton:hover {
-  background-color: #37bc3a;
+  background-color: #2ca52e;
 }
 
+.anchorButton.faq {
+  background-color: #af2591;
+}
+.anchorButton.faq:hover {
+  background-color: #971e7d;
+} 
 .anchorButton.twitter {
   background-color: #1da1f2;
 }
@@ -114,6 +133,9 @@ img {
 }
 .anchorButton.bugreport:hover {
   background-color: #e4331c;
+}
+.anchorButton.disabled {
+  background-color: grey;
 }
 
 .log {

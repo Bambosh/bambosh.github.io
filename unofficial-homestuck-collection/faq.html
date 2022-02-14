@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Unofficial Homestuck Collection</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css" ></style>
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <meta name="description" content="An offline browser built from the ground up to archive Homestuck and its related works. It's everything you could "> 
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="THE UNOFFICIAL HOMESTUCK COLLECTION - 2.0" />
+  <meta property="og:description" content="An offline browser built from the ground up to archive Homestuck and its related works. Now with mod support!" />
+  <meta property="og:image" content="https://bambosh.github.io/unofficial-homestuck-collection/images/thumbnail.png" />
+
+  <script src="https://kit.fontawesome.com/b08012a568.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="card">
+  
+  <div class="logoBox">
+    <a href="index.html">
+      <video autoplay loop muted >
+        <source src="images/collection_logo_v2.webm" type="video/webm">
+        <source src="images/collection_logo_v2.mp4" type="video/mp4">
+        <img src="images/collection_logo_v2.png"/>
+      </video>
+    </a>
+  </div>
+
+  <div class="cardContent">
+   <h2>FREQUENTLY ASKED QUESTIONS</h2>
+
+      <h3>Okay, so what's actually in it?</h3>
+      <p>That's an extremely good question. The issue with this is that it's so damn large I can't even remember everything inside off the top of my head. Here's a by-no-means exhaustive list:</p>
+      <div class="log logHidden" id="collectionContents">
+        <button class="logButton" onclick="document.getElementById('collectionContents').classList.toggle('logHidden')">archive contents</button>
+        <div class="logContent">
+          <ul>
+            <li>Homestuck</li>
+            <li>Homestuck Music Database</li>
+            <li>Homestuck Beta</li>
+            <li>Sweet Bro & Hella Jeff</li>
+            <li>The Blog of Dave Strider</li>
+            <li>Namco High</li>
+            <li>Paradox Space</li>
+            <li>Snapchats</li>
+            <li>Skaianet Systems</li>
+            <li>Jailbreak</li>
+            <li>Bard Quest</li>
+            <li>Problem Sleuth</li>
+            <li>Problem Sleuth Science FAQ</li>
+            <li>Donation Commands</li>
+            <li>The Baby Is You</li>
+            <li>The Vigil Prince</li>
+            <li>Whistles: The Starlight Calliope</li>
+            <li>And It Don't Stop</li>
+            <li>Neon Ice Cream Headache</li>
+            <li>Steep Price For Pie</li>
+            <li>Inappropriate Time For Ham</li>
+            <li>Riddler's Gammon</li>
+            <li>Humanimals</li>
+            <li>Zoosmells</li>
+            <li>An Offer You Can't Refuse</li>
+            <li>A Magical Journey Through the Internet</li>
+            <li>Cheerfulbear - PLAY ME</li>
+            <li>The Man-On-Man Suckoff Challenge</li>
+            <li>MSPA Newspost archive</li>
+            <li>Blogspot, Formspring, and Tumblr</li>
+            <li>Desktop Wallpapers</li>
+            <li>Ryanquest</li>
+            <li>Morse code translator</li>
+            <li>Alternian cipher</li>
+          </ul>
+          <br>
+          And that's not even all of it? How big is this thing?
+        </div>
+      </div>
+
+      <h3>Can you port this to Chromebooks or smartphones?</h3>
+      <p>Due to compatibility issues with Flash, and the browser engine the collection runs on, the only platforms we can support are Windows/Mac/Linux. These problems may be solved in the distant future, but right now our hands are tied.</p>
+
+      <h3>Help! I'm already far into Homestuck on the official website, but the application won't let me past the beginning!</h3>
+      <p>When you start up the program for the first time, "new reader mode" is enabled and set by default - this is a toggle that will hide certain spoilery content until it's safe. This does also prevent you from skipping ahead - but you can manually set your progress through the story on the settings page.</p>
+      <img src="images/new_reader.png" style="border: solid 2px;">
+      <p>Enter your current page number and hit "Adjust" - this should catch everything up to where you currently are.</p>
+
+      <h3>Why are there two different downloads?</h3>
+      <p>
+        <p>The collection is composed of two parts: the main app, and the Asset Pack. The main app handles the code and logic and processing, and the asset pack stores the data. For a couple of different reasons (namely, the Asset Pack is very large and also not GPL licensed) we distribute the Asset Pack and the collection separately.</p>
+        <p>The good news is the collection can be updated with bugfixes and features without requiring a new Asset Pack! We use semantic versioning, so if you were on 1.0.0, an update to 1.0.X would be a bugfix, and an update to 1.X.X would mean bugfixes and new features. Only an update to X.X.X would require re-downloading a new asset pack/patch.</p>
+      </p>
+
+      <h3>Something went wrong! Where can I report it?</h3>
+      <p>        
+        <a href="https://github.com/Bambosh/unofficial-homestuck-collection/issues/new?labels=bug&template=bug_report.md" target="_blank" class="anchorButton bugreport "><i class="fas fa-bug"></i> Report a bug</a>
+        <a href="https://github.com/Bambosh/unofficial-homestuck-collection/issues/new?labels=enhancement&template=feature_request.md" target="_blank" class="anchorButton"><i class="fas fa-comment"></i> Request a feature</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
