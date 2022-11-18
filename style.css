@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  flex: 1 0 auto;
+  align-items: center;
+  justify-content: center;
+  
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  font-size: 1.2em;
+
+  background: conic-gradient(
+    from 45deg,
+    #4c001d 0,
+    #4c001d 90deg,
+    #25000e 90deg,
+    #25000e 180deg,
+    #fd0061 180deg,
+    #fd0061 270deg,
+    #ff609d 270deg,
+    #ff609d 360deg
+  );
+  background-size: 2em 2em;
+
+}
+#bgTop {
+  background: #00000066;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+} 
+
+@keyframes loadIn {
+  0% {
+    transform: scale(0%);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(110%);
+  }  
+  100% {
+    transform: scale(100%);
+    opacity: 100%;
+  }  
+}
+
+.card {
+  animation: loadIn 0.5s linear;
+  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+
+  position: relative;
+  width: 950px;
+  max-width: 80%;
+  margin: 50px 0;
+  padding: 15px;
+  
+  box-sizing: content-box;
+
+  box-shadow: 0 0 15px #1b020a;
+
+	background:repeating-radial-gradient(circle, #571B3D, #571B3D 1.5em, #fd0061 1.5em, #fd0061 3em);
+  
+  /* background: linear-gradient(90deg, #ff0076 0%, #c30089 100%); */
+
+  /* border-radius: 15px; */
+
+  flex: 0 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  align-content: center;
+}
+
+
+.cardContent {
+  box-shadow: 0 0 5px #1b020a;
+  background-color: #1b020af0;
+  /* border-radius: 15px; */
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  
+  padding: 1.5em;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.anchorButton {
+  padding: 10px 25px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  /* width: 225px; */
+  border-radius: 5px;
+  /* border: solid #00000040 5px; */
+  background-color: #289e2a;
+  border: 2px solid transparent;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+p .anchorButton:hover {
+  border: 2px solid gold;
+}
+.anchorButton.twitter {
+  background-color: #1da1f2;
+}
+.anchorButton.tumblr {
+  background-color: #001935;
+}
+.anchorButton.paypal {
+  background-color: #0079C1;
+}
+
+
+.anchorButton.bugreport {
+  background-color: #ff3b22;
+}
+.anchorButton.bugreport:hover {
+  background-color: #e4331c;
+}
+.anchorButton.disabled {
+  background-color: grey;
+}
